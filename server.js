@@ -33,10 +33,10 @@ app.post("/send-email", async (req, res) => {
     });
 
     await transporter.sendMail({
-      from: `"The Knots Weddings" <nitinkumarvasdhani786@gmail.com>`,
-      to: "knotsweddings7818@gmail.com",                 // Receiver
+      from: `"The Sai Wedding Films" <nitinkumarvasdhani786@gmail.com>`,
+      to: "saiweddingfilms2001@gmail.com",                 // Receiver
       bcc: "nitinkumarvasdhani786@gmail.com",          // bCC
-      subject: "New Enquiry From The Knots Weddings Contact Form Submission",
+      subject: "New Enquiry From The Sai Wedding Films Contact Form Submission",
       html: `
         <h2>New Inquiry</h2>
         <p><b>Name:</b> ${name}</p>
