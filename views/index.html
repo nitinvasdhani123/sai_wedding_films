@@ -89,9 +89,36 @@
         </div>
       </nav>
     </header>
+    <style>
+      .hero{
+        position: relative;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
 
+      .hero-bg{
+        position: absolute;
+        inset: 0;
+        background-image: url("/images/hero.jpeg"); /* apni image */
+        background-size: cover;
+        background-position: center;
+        filter: blur(2px);
+        transform: scale(1.1);
+        z-index: 0;
+      }
+
+      .hero-inner{
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        color: white;
+      }
+    </style>
     <section class="hero" id="home">
-      <div class="hero-overlay"></div>
+      <div class="hero-bg"></div>
       <div class="hero-inner">
         <div class="hero-content fade-up">
           <p class="eyebrow">Cinematic Photography</p>
@@ -117,137 +144,98 @@
 
       <div class="filters">
         <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="engagement">Engagement</button>
+        <button class="filter-btn" data-filter="haldi">Haldi</button>
         <button class="filter-btn" data-filter="wedding">Wedding</button>
-        <button class="filter-btn" data-filter="portrait">Portrait</button>
-        <button class="filter-btn" data-filter="fashion">Fashion</button>
-        <button class="filter-btn" data-filter="events">Events</button>
       </div>
 
       <div class="masonry">
 
+        <!-- Engagement -->
+        <figure class="masonry-item" data-category="engagement">
+          <img src="/images/eg1.jpeg" loading="lazy">
+        </figure>
+        <figure class="masonry-item" data-category="engagement">
+          <img src="/images/eg2.jpeg" loading="lazy">
+        </figure>
+        <figure class="masonry-item" data-category="engagement">
+          <img src="/images/eg3.jpeg" loading="lazy">
+        </figure>
+        <figure class="masonry-item" data-category="engagement">
+          <img src="/images/eg4.jpeg" loading="lazy">
+        </figure>
+        <figure class="masonry-item" data-category="engagement">
+          <img src="/images/eg5.jpeg" loading="lazy">
+        </figure>
+        <figure class="masonry-item" data-category="engagement">
+          <img src="/images/eg6.jpeg" loading="lazy">
+        </figure>
+
+        <!-- Haldi -->
+        <figure class="masonry-item" data-category="haldi">
+          <img src="/images/hi1.jpeg" loading="lazy">
+        </figure>
+        <figure class="masonry-item" data-category="haldi">
+          <img src="/images/hi2.jpeg" loading="lazy">
+        </figure>
+        <figure class="masonry-item" data-category="haldi">
+          <img src="/images/hi3.jpeg" loading="lazy">
+        </figure>
+        <figure class="masonry-item" data-category="haldi">
+          <img src="/images/hi4.jpeg" loading="lazy">
+        </figure>
+        <figure class="masonry-item" data-category="haldi">
+          <img src="/images/hi5.jpeg" loading="lazy">
+        </figure>
+
         <!-- Wedding -->
         <figure class="masonry-item" data-category="wedding">
-          <img src="/images/img (1).jpg" loading="lazy">
+          <img src="/images/wg1.jpeg" loading="lazy">
         </figure>
         <figure class="masonry-item" data-category="wedding">
-          <img src="/images/img (2).jpg" loading="lazy">
+          <img src="/images/wg2.jpeg" loading="lazy">
         </figure>
         <figure class="masonry-item" data-category="wedding">
-          <img src="/images/img (3).jpg" loading="lazy">
+          <img src="/images/wg3.jpeg" loading="lazy">
         </figure>
         <figure class="masonry-item" data-category="wedding">
-          <img src="/images/img (4).jpg" loading="lazy">
+          <img src="/images/wg4.jpeg" loading="lazy">
         </figure>
         <figure class="masonry-item" data-category="wedding">
-          <img src="/images/img (5).jpg" loading="lazy">
+          <img src="/images/wg5.jpeg" loading="lazy">
         </figure>
         <figure class="masonry-item" data-category="wedding">
-          <img src="/images/img (6).jpg" loading="lazy">
-        </figure>
-
-        <!-- Portrait -->
-        <figure class="masonry-item" data-category="portrait">
-          <img src="/images/img (7).jpg" loading="lazy">
-        </figure>
-        <figure class="masonry-item" data-category="portrait">
-          <img src="/images/img (8).jpg" loading="lazy">
-        </figure>
-        <figure class="masonry-item" data-category="portrait">
-          <img src="/images/img (9).jpg" loading="lazy">
-        </figure>
-        <figure class="masonry-item" data-category="portrait">
-          <img src="/images/img (10).jpg" loading="lazy">
-        </figure>
-        <figure class="masonry-item" data-category="portrait">
-          <img src="/images/img (11).jpg" loading="lazy">
-        </figure>
-        <figure class="masonry-item" data-category="portrait">
-          <img src="/images/img (12).jpg" loading="lazy">
-        </figure>
-
-        <!-- Fashion -->
-        <figure class="masonry-item" data-category="fashion">
-          <img src="/images/img (13).jpg" loading="lazy">
-        </figure>
-        <figure class="masonry-item" data-category="fashion">
-          <img src="/images/img (14).jpg" loading="lazy">
-        </figure>
-        <figure class="masonry-item" data-category="fashion">
-          <img src="/images/img (15).jpg" loading="lazy">
-        </figure>
-        <figure class="masonry-item" data-category="fashion">
-          <img src="/images/img (16).jpg" loading="lazy">
-        </figure>
-        <figure class="masonry-item" data-category="fashion">
-          <img src="/images/img (17).jpg" loading="lazy">
-        </figure>
-        <figure class="masonry-item" data-category="fashion">
-          <img src="/images/img (18).jpg" loading="lazy">
-        </figure>
-
-        <!-- Events -->
-        <figure class="masonry-item" data-category="events">
-          <img src="/images/img (19).jpg" loading="lazy">
-        </figure>
-        <figure class="masonry-item" data-category="events">
-          <img src="/images/img (20).jpg" loading="lazy">
-        </figure>
-        <figure class="masonry-item" data-category="events">
-          <img src="/images/img (21).jpg" loading="lazy">
-        </figure>
-        <figure class="masonry-item" data-category="events">
-          <img src="/images/img (22).jpg" loading="lazy">
-        </figure>
-        <figure class="masonry-item" data-category="events">
-          <img src="/images/img (23).jpg" loading="lazy">
-        </figure>
-        <figure class="masonry-item" data-category="events">
-          <img src="/images/img (24).jpg" loading="lazy">
-        </figure>
-
-        <!-- Extra -->
-        <figure class="masonry-item" data-category="wedding">
-          <img src="/images/img (25).jpg" loading="lazy">
-        </figure>
-        <figure class="masonry-item" data-category="portrait">
-          <img src="/images/img (26).jpg" loading="lazy">
-        </figure>
-        <figure class="masonry-item" data-category="fashion">
-          <img src="/images/img (27).jpg" loading="lazy">
-        </figure>
-        <figure class="masonry-item" data-category="events">
-          <img src="/images/img (28).jpg" loading="lazy">
+          <img src="/images/wg6.jpeg" loading="lazy">
         </figure>
         <figure class="masonry-item" data-category="wedding">
-          <img src="/images/img (29).jpg" loading="lazy">
+          <img src="/images/wg7.jpeg" loading="lazy">
+        </figure>
+        <figure class="masonry-item" data-category="wedding">
+          <img src="/images/wg8.jpeg" loading="lazy">
         </figure>
 
       </div>
     </section>
-
+    <style>
+      .video-wrapper{
+        max-width:900px;  
+        margin:auto;
+      }
+    </style>
     <section class="videos section fade-up" id="videos">
       <div class="section-header">
         <p class="eyebrow">Motion Stories</p>
         <h2>Films & Reels</h2>
         <p class="subheading">Short cinematic experiences for each collection.</p>
       </div>
-      <div class="video-grid">
+
+      <div class="video-wrapper">
         <article class="video-card" data-video="/videos/video1.mp4">
-          <img src="/videos/thumb1.png" alt="Wedding video" loading="lazy" />
+          <img src="/videos/thumb1.png" alt="Wedding video">
           <div class="play-icon">▶</div>
-          <!-- <h3>Wedding Highlights</h3> -->
-        </article>
-        <article class="video-card" data-video="/videos/video2.mp4">
-          <img src="/videos/thumb2.png" alt="Portrait video" loading="lazy" />
-          <div class="play-icon">▶</div>
-          <!-- <h3>Editorial Portraits</h3> -->
-        </article>
-        <article class="video-card" data-video="/videos/video3.mp4">
-          <img src="/videos/thumb3.png" alt="Fashion video" loading="lazy" />
-          <div class="play-icon">▶</div>
-          <!-- <h3>Fashion Week</h3> -->
         </article>
       </div>
+
     </section>
 
         <section class="stats-strip fade-up" id="stats">

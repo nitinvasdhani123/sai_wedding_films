@@ -560,7 +560,7 @@ h3 {
 .video-close {
   position: absolute;
   top: 6rem;
-  right: 6rem;
+  right: 1rem;
   font-size: 2rem;
   background: none;
   border: none;
