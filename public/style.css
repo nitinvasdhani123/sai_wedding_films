@@ -583,6 +583,9 @@ h3 {
   .hero-content {
     max-width: 100%;
   }
+  section#portfolio {
+      opacity: 1;
+  }
 }
 
 @media (max-width: 900px) {
@@ -592,6 +595,10 @@ h3 {
 
   .masonry {
     column-count: 2;
+  }
+
+  section#portfolio {
+      opacity: 1;
   }
 }
 
@@ -627,6 +634,10 @@ h3 {
     flex-direction: column;
     align-items: center;
   }
+
+  section#portfolio {
+      opacity: 1;
+  }
 }
 
 @media (max-width: 600px) {
@@ -637,6 +648,10 @@ h3 {
   .section {
     width: min(100% - 2rem, 92vw);
   }
+
+  section#portfolio {
+      opacity: 1;
+  }
 }
 
 @media (max-width: 500px) {
@@ -646,6 +661,10 @@ h3 {
 
   .stats-grid {
     grid-template-columns: 1fr;
+  }
+
+  section#portfolio {
+      opacity: 1;
   }
 }
 
